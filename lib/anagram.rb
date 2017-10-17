@@ -13,7 +13,7 @@ class Anagram
     array.each do |array_word|
       new_array = array_word.split("").sort
       if test_array == new_array
-        return_array = new_array
+        return_array << array_word
       end
     end
 
